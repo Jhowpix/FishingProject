@@ -17,26 +17,35 @@ while True:
     print("3 - Ver status")
     print("4 - Vender peixes")
     print("5 - Comprar equipamentos")
-    print("6 - Sair")
+    print("6 - Escolher área")
+    print("7 - Sair")
 
-    option = int(input("Escolha: "))
-    if option == 1:
+    option = input("Escolha: ")
+    if option == "1":
         player.fish()
 
-    elif option == 2:
+    elif option == "2":
         print(player.show_inventory())
 
-    elif option == 3:
+    elif option == "3":
+        print("\n=== STATUS ===\n")
         print(f"Jogador: {player.name}")
+        print(f"Nível: {player.level}")
+        print(f"XP: {player.xp}")
         print(f"Dinheiro: ${player.money}")
+        print(f"Equipamento: {player.equipment}")
+        print(f"Área: {player.area}")
 
-    elif option == 4:
+    elif option == "4":
         player.sell_fish()
 
-    elif option == 5:
+    elif option == "5":
         player.buy_equipment()
 
-    elif option == 6:
+    elif option == "6":
+        player.choose_area()
+
+    elif option == "7":
         print("Até mais!")
         break
 

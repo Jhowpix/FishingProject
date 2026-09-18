@@ -4,7 +4,7 @@ fish = [
     {
         "nome": "Sardinha",
         "value": 10,
-        "rarity": "Comun"
+        "rarity": "Comum"
     },
     {
         "nome": "Atum",
@@ -23,18 +23,42 @@ fish = [
     }
 ]
 
-def catch_fish(equipment):
+areas = {
+    "Praia": {
+        "level": 1,
+        "fish": ["Sardinha", "Atum"]
+    },
+
+    "Mar aberto": {
+        "level": 3,
+        "fish": ["Atum", "Tubarão"]
+    },
+
+    "Ilha misteriosa": {
+        "level": 8,
+        "fish": ["Tubarão", "Peixe Lendário"]
+    }
+}
+
+def catch_fish(equipment,area):
+
+    avaliable_fish = [
+        fish_item
+        for fish_item in fish
+        if fish_item["nome"] in areas[area]["fish"]
+    ]
+
     if equipment == "Vara Básica":
-        weight = [70, 20, 8, 2]
+        weight = [70, 30]
 
     elif equipment == "Vara Média":
-        weight = [60, 25, 10, 5]
+        weight = [60, 40]
 
     elif equipment == "Vara Profissional":
-        weight = [50, 25, 15, 10]
+        weight = [50, 50]
 
     return random.choices(
-        fish,
+        avaliable_fish,
         weights = weight,
         k = 1
     )[0]
