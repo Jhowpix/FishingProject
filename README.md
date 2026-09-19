@@ -1,4 +1,5 @@
 # 🎣 FishingProject
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/5d536c76-5b4f-4229-b470-ece344fdd623" /><br>
 
 A terminal-based fishing game built with Python that evolved into a practical project for learning **Python, PostgreSQL, SQL, Pandas, and Matplotlib**.
 
