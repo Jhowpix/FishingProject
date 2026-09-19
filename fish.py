@@ -2,41 +2,98 @@ import random
 
 fish = [
     {
-        "nome": "Sardinha",
-        "value": 10,
+        "nome": "Robalo",
+        "value": 3,
         "rarity": "Comum"
     },
     {
-        "nome": "Atum",
-        "value": 30,
+        "nome": "Sardinha",
+        "value": 5,
+        "rarity": "Comum"
+    },
+    {
+        "nome": "Anchova",
+        "value": 8,
+        "rarity": "Comum"
+    },
+    {
+        "nome": "Cavala",
+        "value": 10,
         "rarity": "Incomum"
+    },
+    {
+        "nome": "Pargo",
+        "value": 12,
+        "rarity": "Incomum"
+    },
+
+    {
+        "nome": "Corvina",
+        "value": 15,
+        "rarity": "Comum"
+    },
+    {
+        "nome": "Tainha",
+        "value": 18,
+        "rarity": "Comum"
+    },
+    {
+        "nome": "Pescada",
+        "value": 20,
+        "rarity": "Incomum"
+    },
+    {
+        "nome": "Atum",
+        "value": 22,
+        "rarity": "Incomum"
+    },
+    {
+        "nome": "Dourado-do-mar",
+        "value": 25,
+        "rarity": "Raro"
+    },
+
+    {
+        "nome": "Garoupa",
+        "value": 30,
+        "rarity": "Comum"
+    },
+    {
+        "nome": "Badejo",
+        "value": 40,
+        "rarity": "Incomum"
+    },
+    {
+        "nome": "Linguado",
+        "value": 50,
+        "rarity": "Raro"
+    },
+    {
+        "nome": "Bonito",
+        "value": 60,
+        "rarity": "Raro"
     },
     {
         "nome": "Tubarão",
         "value": 100,
         "rarity": "Raro"
     },
-    {
-        "nome": "Peixe Lendário",
-        "value": 500,
-        "rarity": "Lendário"
-    }
 ]
 
 areas = {
     "Praia": {
         "level": 1,
-        "fish": ["Sardinha", "Atum"]
+        "fish": ["Robalo", "Sardinha", "Anchova", "Cavala", "Pargo"]
     },
 
     "Mar aberto": {
         "level": 3,
-        "fish": ["Atum", "Tubarão"]
+    "fish": ["Corvina", "Tainha", "Pescada", "Atum", "Dourado-do-mar"]
     },
 
     "Ilha misteriosa": {
         "level": 8,
-        "fish": ["Tubarão", "Peixe Lendário"]
+        "fish": ["Garoupa", "Badejo", "Linguado", "Bonito","Tubarão"]
     }
 }
 
@@ -49,13 +106,13 @@ def catch_fish(equipment,area):
     ]
 
     if equipment == "Vara Básica":
-        weight = [70, 30]
+        weight = [30, 25, 20, 15, 10]
 
     elif equipment == "Vara Média":
-        weight = [60, 40]
+        weight = [25, 22, 20, 18, 15]
 
     elif equipment == "Vara Profissional":
-        weight = [50, 50]
+        weight = [20, 20, 20, 20, 20]
 
     return random.choices(
         avaliable_fish,

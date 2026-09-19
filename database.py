@@ -6,7 +6,7 @@ def save_fishing_record(player, area, fish, rarity, value, xp, equipment):
         host="localhost",
         dbname = "fishing_game",
         user = "postgres",
-        password = "SUA SENHA AQUI",
+        password = "Sua Senha Aqui",
     )
 
     cursor = connection.cursor()
