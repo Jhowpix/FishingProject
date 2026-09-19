@@ -8,9 +8,9 @@
 ✅ Pandas loading data<br>
 ✅ DataFrame appearing in the browser<br>
 ✅ All 120 records are being displayed<br><br>
-A terminal-based fishing game built with Python that evolved into a practical project for learning **Python, PostgreSQL, SQL, Pandas, and Matplotlib**.
+A terminal-based fishing game built with Python that evolved into a practical project for learning Python, PostgreSQL, SQL, Pandas, and Matplotlib.
 
-The main goal of this project is not only to create a game, but to use the game as a source of real data and learn how to **store, clean, analyze, and visualize information**.
+The main goal of this project is not only to create a game, but to use the game as a source of real data and learn how to store, clean, analyze, and visualize information.
 
 ---
 
