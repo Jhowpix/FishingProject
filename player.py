@@ -1,9 +1,10 @@
 from fish import catch_fish
+from database import save_fishing_record
 
 class Player:
     def __init__(self,name):
         self.name = name
-        self.money = 100
+        self.money = 100  >= 0
         self.inventory = []
         self.equipment = "Vara Básica"
         self.level = 1
@@ -31,7 +32,17 @@ class Player:
         self.gain_xp(xp)
         print(f"UP! {xp}XP")
 
-    def show_inventory(self):
+        save_fishing_record(
+            self.name,
+            self.area,
+            caught['nome'],
+            caught['rarity'],
+            caught['value'],
+            xp,
+            self.equipment
+        )
+
+    def  show_inventory(self):
         if not self.inventory:
             print("Inventário vazio.")
             return
