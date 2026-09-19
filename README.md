@@ -1,6 +1,11 @@
 # 🎣 FishingProject
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/5d536c76-5b4f-4229-b470-ece344fdd623" /><br>
-
+✅ Streamlit running
+✅ PostgreSQL connected
+✅ Psycopg working
+✅ Pandas loading data
+✅ DataFrame appearing in the browser
+✅ All 120 records are being displayed<br>
 A terminal-based fishing game built with Python that evolved into a practical project for learning **Python, PostgreSQL, SQL, Pandas, and Matplotlib**.
 
 The main goal of this project is not only to create a game, but to use the game as a source of real data and learn how to **store, clean, analyze, and visualize information**.
