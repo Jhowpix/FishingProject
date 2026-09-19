@@ -1,5 +1,7 @@
-# 🎣 FishingProject<br>
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/5d536c76-5b4f-4229-b470-ece344fdd623" /><br><br>
+# 🎣 FishingProject
+<br>
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/31297cf4-680e-44d8-bf54-df4a836d56e8" />
+<br><br>
 ✅ Streamlit running<br>
 ✅ PostgreSQL connected<br>
 ✅ Psycopg working<br>
