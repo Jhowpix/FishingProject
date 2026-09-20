@@ -4,7 +4,7 @@ from database import save_fishing_record
 class Player:
     def __init__(self,name):
         self.name = name
-        self.money = 100  >= 0
+        self.money = 100
         self.inventory = []
         self.equipment = "Vara Básica"
         self.level = 1
@@ -16,9 +16,9 @@ class Player:
 
         self.inventory.append(caught)
 
-        print(f"Você pescou: {caught['nome']}")
-        print(f"Valor: {caught['value']}")
-        print(f"Raridade: {caught['rarity']}")
+        print(f"VOCÊ PESCOU!\033[1;35m {caught['nome'].upper()}\033[0m")
+        print(f"Valor:\033[1;35m {caught['value']}\033[0m")
+        print(f"Raridade:\033[1;35m {caught['rarity'].upper()}\033[0m")
 
         xp_by_rarity = {
             "Comum": 5,
@@ -30,7 +30,7 @@ class Player:
         xp = xp_by_rarity[caught['rarity']]
 
         self.gain_xp(xp)
-        print(f"UP! {xp}XP")
+        print(f"UP!\033[1;35m {xp}XP\033[0m")
 
         save_fishing_record(
             self.name,
@@ -44,35 +44,35 @@ class Player:
 
     def  show_inventory(self):
         if not self.inventory:
-            print("Inventário vazio.")
+            print("Inventário vazio.".upper())
             return
 
-        print("\n=== INVENTÁRIO ===\n")
+        print("\n=== \033[1;32m INVENTÁRIO \033[0m ===\n")
 
         for fish in self.inventory:
             print(
-                f"{fish['nome']}  | "
-                f"{fish['value']} | "
-                f"{fish['rarity']}"
+                f" \033[1;35m {fish['nome']}  | \033[0m "
+                f" \033[1;35m {fish['value']} | \033[0m "
+                f" \033[1;35m {fish['rarity']} \033[0m "
             )
 
     def sell_fish(self):
         if not self.inventory:
-            print("\nVocê não possui peixes para vender.")
+            print("\n \033[1;33m Você não possui peixes para vender.\033[0m ".upper())
             return
 
         total = sum(fish['value'] for fish in self.inventory)
 
         self.money += total
         self.inventory.clear()
-        print(f"Você vendeu os peixes por ${total}.")
+        print(f" \033[1;33m Você vendeu os peixes por ${total}. \033[0m ".upper())
 
     def buy_equipment(self):
-        print("\n=== LOJA ===")
-        print("1 - Vara Média $100")
-        print("2 - Vara Profissional $500")
+        print("\n=== \033[1;32m LOJA \033[0m ===")
+        print(" \033[0;32m 1 \033[0m - Vara Média $100")
+        print(" \033[0;32m 2 \033[0m - Vara Profissional $500")
 
-        option = input("Escolha: ")
+        option = input(" \033[1;33m Escolha: \033[0m ")
 
         if option == "1":
             price = 100
@@ -83,7 +83,7 @@ class Player:
             equipment = "Vara Profissional"
 
         else:
-            print("Opção invalida!")
+            print(" \033[1;33m Opção invalida! \033[0m ".upper())
             return
 
         self.equipment = equipment
@@ -92,7 +92,7 @@ class Player:
             self.money -= price
             print(f"Você comprou {equipment}")
         else:
-            print("Dinheiro insuficiente!")
+            print(" \033[1;33m Dinheiro insuficiente! \033[0m ".upper())
 
     def gain_xp(self, amount):
         self.xp += amount
@@ -102,43 +102,45 @@ class Player:
         if self.xp >= xp_needed:
             self.xp -= xp_needed
             self.level += 1
-            print(f"\n Você subiu para o nível {self.level}!")
+            print("-" * 20)
+            print(f" \n \033[1;35m Você subiu para o nível {self.level}! \033[0m ".upper())
+            print("-" * 20)
 
     def choose_area(self):
-        print("\n=== AREAS ===\n")
+        print("\n===  AREAS  ===\n")
 
         print("1 - Praia")
 
-        if self.level >= 3:
+        if self.level >= 2:
             print("2 - Mar aberto")
         else:
-            print("2 - Mar aberto desbloqueia no nível 3.")
+            print("2 - Mar aberto desbloqueia no nível 2.")
 
-        if self.level >= 8:
+        if self.level >= 3:
             print("3 - Ilha misteriosa")
         else:
-            print("3 - Ilha misteriosa desbloqueia no nível 8.")
+            print("3 - Ilha misteriosa desbloqueia no nível 3.")
 
-        option = input("Escolha a área: ")
+        option = input(" \033[1;33m Escolha a área: \033[0m ")
 
         if option == "1":
             self.area = "Praia"
 
         elif option == "2":
-            if self.level >= 3:
+            if self.level >= 2:
                 self.area = "Mar aberto"
             else:
-                print("Área bloqueada! você precisa estar no nível 3.")
+                print(" \033[1;33m Área bloqueada! \033[0m \n Você precisa estar no \033[1;32m nível 2.\033[0m ")
                 return
         elif option == "3":
-            if self.level >= 8:
+            if self.level >= 3:
                 self.area = "Ilha misteriosa"
             else:
-                print("Área bloqueada! você precisa estar no nível 8.")
+                print(" \033[1;33m Área bloqueada! \033[0m \n Você precisa estar no \033[1;32m nível 3.\033[0m ")
                 return
 
         else:
-            print("Opção invalida!")
+            print(" \033[1;33m Opção invalida!\033[0m ".upper())
             return
 
         print(f"Você está agora em: {self.area}")

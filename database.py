@@ -6,7 +6,7 @@ def save_fishing_record(player, area, fish, rarity, value, xp, equipment):
         host="localhost",
         dbname = "fishing_game",
         user = "postgres",
-        password = "Sua Senha Aqui",
+        password = "senha",
     )
 
     cursor = connection.cursor()
@@ -22,10 +22,10 @@ def save_fishing_record(player, area, fish, rarity, value, xp, equipment):
 
     connection.commit()
 
-    print("Pescaria salva no PostgreSQL")
+#    print("Pescaria salva no PostgreSQL")
 
     cursor.close()
     connection.close()
 
-    print("\nConexão encerrada.")
+#    print("\nConexão encerrada.")
 

@@ -1,12 +1,13 @@
 import streamlit as st
 import psycopg
 import pandas as pd
+from streamlit_autorefresh import st_autorefresh
 
 connection = psycopg.connect(
     host="localhost",
     dbname="fishing_game",
     user="postgres",
-    password="Sua Senha Aqui"
+    password="senha"
 )
 
 cursor = connection.cursor()
@@ -31,20 +32,23 @@ df = pd.DataFrame(
     ]
 )
 
-st.title("🎣 Fishing Analytics")
-st.write("Dashboard do projeto de pesca")
+st_autorefresh(
+    interval=10000,
+    key="fishing_dashboard"
+)
 
-st.metric("🎣 Total de pescarias", len(df))
+st.title("🎣 Fishing Analytics")
+#st.write("Dashboard do projeto de pesca")
+
+st.metric("   TOTAL DE PEIXES.", len(df))
 st.dataframe(df)
 
 st.metric(
-    label="💰 Total do valor gerado em todas as pescas.",
+    label="💰  VALOR TOTAL DOS PEIXES.",
     value=f"R$ {df['value'].sum():,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 )
-# st.dataframe(df)
-
 st.metric(
-    label="🔝 Total de Xp ganhos.",
+    label="🔝 TOTAL XP! GANHOS.",
     value=f"{df['xp'].sum():,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 )
-# st.dataframe(df)
+

@@ -1,26 +1,26 @@
 from player import Player
 
 while True:
-    name = input("Qual o seu nome? ").strip()
+    name = input("\033[1;32m Qual o seu nome? \033[0m").strip()
     if name  and len(name) <= 12 and name.isalpha():
         break
-    print("Nome inválido. Use apenas letras, com no máximo 12 caracteres")
+    print("\033[1;33m Nome inválido. Use apenas letras, com no máximo 12 caracteres.\033[0m")
 
-player = Player(name)
-print(f"\nBem vindo, {player.name}!")
+player = Player(name.upper())
+print(f"\nBem vindo!, {player.name}!")
 # player.fish()
 
 while True:
-    print("\n=== FISHING GAME ===")
-    print("1 - Pescar")
-    print("2 - Ver inventário")
-    print("3 - Ver status")
-    print("4 - Vender peixes")
-    print("5 - Comprar equipamentos")
-    print("6 - Escolher área")
-    print("7 - Sair")
+    print("\n===\033[1;32m FISHING GAME \033[0m===\n")
+    print("\033[1;32m1\033[0m - Pescar")
+    print("\033[1;32m2\033[0m - Ver inventário")
+    print("\033[1;32m3\033[0m - Ver status")
+    print("\033[1;32m4\033[0m - Vender peixes")
+    print("\033[1;32m5\033[0m - Comprar equipamentos")
+    print("\033[1;32m6\033[0m - Escolher área")
+    print("\033[1;32m7\033[0m - Sair")
 
-    option = input("Escolha: ")
+    option = input("\n \033[1;32m Escolha: \033[0m \n")
     if option == "1":
         player.fish()
 
@@ -28,13 +28,13 @@ while True:
         print(player.show_inventory())
 
     elif option == "3":
-        print("\n=== STATUS ===\n")
-        print(f"Jogador: {player.name}")
-        print(f"Nível: {player.level}")
-        print(f"XP: {player.xp}")
-        print(f"Dinheiro: ${player.money}")
-        print(f"Equipamento: {player.equipment}")
-        print(f"Área: {player.area}")
+        print("\n===  \033[1;32m STATUS  ===\033[0m \n")
+        print(f"Jogador: \033[1;35m{player.name}\033[0m")
+        print(f"Nível: \033[1;35m{player.level}\033[0m")
+        print(f"XP: \033[1;35m{player.xp}\033[0m")
+        print(f"Dinheiro: \033[0;32m${player.money}\033[0m")
+        print(f"Equipamento: \033[1;35m{player.equipment}\033[0m")
+        print(f"Área: \033[1;35m{player.area}\033[0m")
 
     elif option == "4":
         player.sell_fish()
@@ -50,5 +50,5 @@ while True:
         break
 
     else:
-        print("Opção invalida. Tente novamente.")
+        print(" \033[1;33m OPÇÃO INVALIDA.\n \033[0m Tente novamente.")
 

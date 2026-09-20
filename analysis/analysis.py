@@ -6,7 +6,7 @@ connection = psycopg.connect(
     host="localhost",
     dbname="fishing_game",
     user="postgres",
-    password="Sua Senha Aqui"
+    password="senha"
 )
 
 cursor = connection.cursor()

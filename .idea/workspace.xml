@@ -9,7 +9,8 @@
       <change beforePath="$PROJECT_DIR$/analysis/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fish.py" beforeDir="false" afterPath="$PROJECT_DIR$/fish.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,61 +26,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000060790693595" />
-      <entry key="MS500" value="1.1299524721724274" />
-      <entry key="S2" value="2.344254235593349" />
-      <entry key="S5" value="3.4885301296235" />
-      <entry key="S10" value="4.131553984425176" />
-      <entry key="S30" value="4.6801557947374945" />
-      <entry key="S60" value="4.835939595405337" />
-      <entry key="M2" value="4.946150230948737" />
-      <entry key="M5" value="7.0683485235389805" />
-      <entry key="M10" value="15.405004984404414" />
-      <entry key="M15" value="23.61807765108505" />
-      <entry key="M30" value="41.697612899416455" />
-      <entry key="H1" value="69.80380841945838" />
-      <entry key="H2" value="143.33322248707162" />
-      <entry key="H4" value="317.0789646556552" />
-      <entry key="D1" value="845.146117940213" />
-      <entry key="W1" value="1025.7043420845623" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000494312995" />
+      <entry key="S2" value="1.0151380240685859" />
+      <entry key="S5" value="1.220833077859579" />
+      <entry key="S10" value="1.6179867113907758" />
+      <entry key="S30" value="2.3271068703329156" />
+      <entry key="S60" value="2.625242067575348" />
+      <entry key="M2" value="2.80195557606351" />
+      <entry key="M5" value="3.131756187647741" />
+      <entry key="M10" value="6.114129160161157" />
+      <entry key="M15" value="12.070904513805715" />
+      <entry key="M30" value="36.87446488046732" />
+      <entry key="H1" value="85.23612496621503" />
+      <entry key="H2" value="168.90092727422837" />
+      <entry key="H4" value="338.8322288160563" />
+      <entry key="D1" value="951.0929963765491" />
+      <entry key="W1" value="1189.3717112365987" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="6.095049353523851E-278" />
-      <entry key="S5" value="1.4783937178264725E-111" />
-      <entry key="S10" value="4.949798362368907E-56" />
-      <entry key="S30" value="5.682785986513909E-19" />
-      <entry key="S60" value="1.062562345705359E-9" />
-      <entry key="M2" value="4.606062191512627E-5" />
-      <entry key="M5" value="0.027916618132454427" />
-      <entry key="M10" value="0.2362836441345191" />
-      <entry key="M15" value="0.48168823401621863" />
-      <entry key="M30" value="1.00978651605599" />
-      <entry key="H1" value="1.8523537252438222" />
-      <entry key="H2" value="3.8425181751323314" />
-      <entry key="H4" value="7.533866822802266" />
-      <entry key="D1" value="17.226997064627184" />
-      <entry key="W1" value="20.400820352968022" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="1.4689550552863644E-116" />
+      <entry key="S60" value="1.7083546152872575E-58" />
+      <entry key="M2" value="1.8468924221737302E-29" />
+      <entry key="M5" value="4.865276498377229E-12" />
+      <entry key="M10" value="3.119291922478224E-6" />
+      <entry key="M15" value="2.690590544973516E-4" />
+      <entry key="M30" value="0.02386548990790756" />
+      <entry key="H1" value="0.2847700532685118" />
+      <entry key="H2" value="1.5066109761664013" />
+      <entry key="H4" value="4.717485100697719" />
+      <entry key="D1" value="15.934007335845136" />
+      <entry key="W1" value="20.17469506047066" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9395284996928713" />
-      <entry key="MS500" value="1.1160112257138253" />
-      <entry key="S2" value="2.336760931907819" />
-      <entry key="S5" value="3.48388600275846" />
-      <entry key="S10" value="4.128751341392696" />
-      <entry key="S30" value="4.6790824914018625" />
-      <entry key="S60" value="4.835382745157383" />
-      <entry key="M2" value="4.94583644115846" />
-      <entry key="M5" value="7.09219247588857" />
-      <entry key="M10" value="15.628859267525954" />
-      <entry key="M15" value="24.084279630534176" />
-      <entry key="M30" value="42.69240234423684" />
-      <entry key="H1" value="71.64332156917972" />
-      <entry key="H2" value="147.16268185265193" />
-      <entry key="H4" value="324.5992588953165" />
-      <entry key="D1" value="862.3674935220037" />
-      <entry key="W1" value="1046.1041981122546" />
+      <entry key="MS100" value="0.8645372313078652" />
+      <entry key="MS500" value="0.9713075442248615" />
+      <entry key="S2" value="1.0078287985421497" />
+      <entry key="S5" value="1.2175895962033056" />
+      <entry key="S10" value="1.6160611494624417" />
+      <entry key="S30" value="2.3262845383819015" />
+      <entry key="S60" value="2.624792977750754" />
+      <entry key="M2" value="2.801719793797647" />
+      <entry key="M5" value="3.1316558007794013" />
+      <entry key="M10" value="6.114039420137451" />
+      <entry key="M15" value="12.070959304336263" />
+      <entry key="M30" value="36.8972302891335" />
+      <entry key="H1" value="85.51774840245828" />
+      <entry key="H2" value="170.40135381264176" />
+      <entry key="H4" value="343.54049478058056" />
+      <entry key="D1" value="967.0216492574042" />
+      <entry key="W1" value="1209.5454295397406" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -91,32 +92,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.analysis.executor": "Run",
-    "Python.app.executor": "Run",
-    "Python.database.executor": "Run",
-    "Python.fish.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.player.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.analysis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.database.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fish.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.player.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -135,7 +136,8 @@
       <workItem from="1789748055410" duration="23848000" />
       <workItem from="1789850165220" duration="3521000" />
       <workItem from="1789855810744" duration="1008000" />
-      <workItem from="1789857048004" duration="3955000" />
+      <workItem from="1789857048004" duration="4255000" />
+      <workItem from="1789870881123" duration="9577000" />
     </task>
     <servers />
   </component>
@@ -155,11 +157,12 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FishingProject$fish.coverage" NAME="fish Coverage Results" MODIFIED="1789749937900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/app_py$main.coverage" NAME="main Coverage Results" MODIFIED="1789860378428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/app_py$main.coverage" NAME="main Coverage Results" MODIFIED="1789879266663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FishingProject$main.coverage" NAME="main Coverage Results" MODIFIED="1789851767107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FishingProject$analysis.coverage" NAME="analysis Coverage Results" MODIFIED="1789783603210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis" />
-    <SUITE FILE_PATH="coverage/app_py$app.coverage" NAME="app Coverage Results" MODIFIED="1789857316192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
+    <SUITE FILE_PATH="coverage/app_py$app.coverage" NAME="app Coverage Results" MODIFIED="1789877961687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
     <SUITE FILE_PATH="coverage/FishingProject$database.coverage" NAME="database Coverage Results" MODIFIED="1789782495450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/app_py$player.coverage" NAME="player Coverage Results" MODIFIED="1789876188210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FishingProject$player.coverage" NAME="player Coverage Results" MODIFIED="1789782280969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
